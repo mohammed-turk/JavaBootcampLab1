@@ -275,33 +275,5 @@ public class Main {
                 aCounter++;
         }
         System.out.println("Number of a's: " + aCounter);
-
-
-
-
-
-
-
-
-//
-
-//        Q18.
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
 }
