@@ -243,22 +243,34 @@ public class Main {
         int exitNumber;
         int largest;
         int smallest;
-        System.out.println("Enter how many numbers you want to enter: ");
-        int stopping = scanner.nextInt();
-        int counter17 = 1;
-        System.out.println("Enter a number");
+
+//        int counter17 = 1;
+        System.out.println("Enter a number, to stop enter 11 then choose true");
         exitNumber = scanner.nextInt();
         largest = exitNumber;
         smallest = exitNumber;
+        boolean exit = false;
 
-        while (counter17 < stopping){
-            counter17++;
-            System.out.println("Enter a number");
+        while ( !exit ){
+//            counter17++;
+            System.out.println("Enter a number, to stop enter 11 then choose true");
             exitNumber = scanner.nextInt();
-            if (exitNumber > largest)
-                largest = exitNumber;
-            if (exitNumber < smallest)
-                smallest = exitNumber;
+
+            if (exitNumber == 11){
+                System.out.println("choose true if you want to exit and false if you want to enter number 11 as is");
+                exit = scanner.nextBoolean();
+
+            }
+
+            if (!exit){
+                if (exitNumber > largest)
+                    largest = exitNumber;
+                if (exitNumber < smallest)
+                    smallest = exitNumber;
+            }
+
+
+
         }
         System.out.println("the largest number is: " + largest);
         System.out.println("the smallest number is: " + smallest);
