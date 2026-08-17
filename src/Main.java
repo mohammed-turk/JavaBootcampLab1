@@ -171,7 +171,7 @@ public class Main {
         num313 = scanner.nextInt();
         System.out.println("Input forth number: ");
         num413 = scanner.nextInt();
-        if ( num113 == num213 && num113 == num313 & num113 == num413)
+        if ( num113 == num213 && num113 == num313 && num113 == num413)
             System.out.println("Numbers are equal");
         else
             System.out.println("Numbers are not equal");
